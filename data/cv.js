@@ -46,6 +46,12 @@ export const cv = {
     "Taught 1,400+ university students",
     "19 certifications earned, 1 in progress",
   ],
+   stats: [
+    { value: "16", label: "years of experience" },
+    { value: "40+", label: "products shipped" },
+    { value: "9M+", label: "people reached" },
+    { value: "64", label: "people led" },
+  ],
 
   education: [
     {
@@ -107,6 +113,7 @@ export const cv = {
         "Cut the app crash rate from 2.4% to 0.3% and raised the app-store rating from 3.6 to 4.7.",
         "Took the platform through two health-data security audits with zero major findings.",
       ],
+       
       tech: ["React", "React Native", "Node.js", "PostgreSQL", "Google Cloud", "Kubernetes"],
     },
     {

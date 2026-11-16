@@ -25,6 +25,20 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+                <details className="relative sm:hidden">
+          <summary className="cursor-pointer list-none font-semibold text-brand">
+            Menu
+          </summary>
+          <ul className="absolute right-0 mt-3 w-44 space-y-3 rounded-lg border border-brand/20 bg-cream p-4 text-sm shadow-lg">
+            {links.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:underline">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </details>
       </nav>
     </header>
   );
