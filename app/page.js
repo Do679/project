@@ -24,14 +24,15 @@ export default function Home() {
           <h1 className="text-4xl font-bold">{cv.name}</h1>
           <p className="mt-2 text-xl text-gray-600">{cv.title}</p>
           <p className="mt-1 text-gray-500">{cv.location}</p>
-                      <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-4 border-t border-gold/40 pt-4 sm:grid-cols-4">
-            {cv.stats.map((s) => (
-              <div key={s.label}>
-                <p className="text-3xl font-bold text-brand">{s.value}</p>
-                <p className="text-sm text-gray-600">{s.label}</p>
-              </div>
-            ))}
-          </div>
+                      <blockquote className="mt-6 border-s-4 border-gold ps-4">
+            <p className="text-xl italic text-brand">
+              “Design systems that speak two languages”
+            </p>
+            <p className="mt-1 text-sm text-gray-500">
+              Keynote, Najd Developer Days 2025
+            </p>
+          </blockquote>
+          
           {cv.cvFile && (
             <a
               href={withBase(`/${cv.cvFile}`)}
