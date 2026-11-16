@@ -28,9 +28,23 @@ export default async function ProjectPage({ params }) {
         ← Back to projects
       </Link>
       <h1 className="mt-4 text-3xl font-bold">{project.name}</h1>
-      <p className="mt-4 leading-relaxed text-gray-700">
-        {project.description}
+            <p className="mt-2 text-gray-500">
+        {project.organization} · {project.period} · {project.role} · {project.team}
       </p>
+            <div className="mt-8 space-y-6">
+        <div>
+          <h2 className="text-lg font-semibold">Problem</h2>
+          <p className="mt-1 leading-relaxed text-gray-700">{project.problem}</p>
+        </div>
+        <div>
+          <h2 className="text-lg font-semibold">Action</h2>
+          <p className="mt-1 leading-relaxed text-gray-700">{project.action}</p>
+        </div>
+        <div>
+          <h2 className="text-lg font-semibold">Result</h2>
+          <p className="mt-1 leading-relaxed text-gray-700">{project.result}</p>
+        </div>
+      </div>
 
       <ul className="mt-6 flex flex-wrap gap-2">
         {project.tech.map((t) => (

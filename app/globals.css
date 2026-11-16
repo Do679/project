@@ -3,7 +3,9 @@
 /* TODO: define your own colors here and use them as Tailwind classes,
    e.g. --color-brand: #2f5bd9;  ->  className="text-brand bg-brand" */
 @theme {
-  --color-brand: #2f5bd9;
+  --color-brand: #7a1f3d;
+  --color-cream: #faf6f0;
+  --color-gold: #b8862b;
 }
 
 html {
@@ -11,6 +13,10 @@ html {
 }
 
 body {
-  background: #ffffff;
-  color: #171717;
+  background: #faf6f0;
+  color: #2b1d22;
+}
+h1,
+h2 {
+  color: #7a1f3d;
 }
